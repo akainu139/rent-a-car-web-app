@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F0F0F0; 
+}
+
+/* index.php */
+.datetimepicker-dropdown-bottom-right{
+    background: #fff !important;
+    color: #000 !important;
+}
+#headerBG{
+    height:93vh;
+    background: url("../img/headerBG.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+#headerBG .zatamnjenjeBG{
+    background-color:rgba(0,0,0,0.2);
+    height:100%;
+    width:100%;
+}
+
+/* svaVozila.php i dostupnaVozila.php */
+.popis-slika{
+    display:grid;
+    grid-row-gap: 1.5rem;
+}
+.popis-slika .slika{
+    height: 250px !important;
+    width: auto;
+    margin:10px auto;
+    /* 
+    width:100%;
+    height:auto;
+    */
+}
+.popis-slika .kartica{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 0.5rem;
+}
+.popis-slika .kartica .card-body{
+    overflow:hidden;
+}
+@media only screen and (max-width: 991px) {
+    .popis-slika .kartica{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 0.5rem;
+    }
+}
+
+/* header.php - navbar */
+#navbar, .dropdown-menu, .dropdown-menu:hover a{
+    background-color: #3b3a36;
+}
+.dropdown-menu .dropdown-item.active{
+    background-color: #3b3a36;
+    color: #ffd500 !important;
+}
+#navbar *{
+    color: #fff;
+    border: solid #3b3a36 1px;
+    transition: all 0.4s ease 0s
+}
+#navbar .active *, #navbar .navbar-brand{
+    color: #ffd500;
+}
+.navbarSection2 a:hover, .navbarSection3 a:hover
+{
+    color: #ffd500 !important;
+    border: solid #ffd500 1px !important;
+    border-radius: 0.5rem !important;
+}
+.navbarSection1{
+    display:flex;
+    justify-content:flex-start;
+    width:15%
+}
+.navbarSection2{
+    display:flex;
+    justify-content:center;
+    width:70%
+}
+.navbarSection3{
+    display:flex;
+    justify-content:flex-end;
+    width:15%
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 213, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+    border-color: rgb(255,213,0);
+}
+@media only screen and (max-width: 767px) {
+    .navbarSection2, .navbarSection3
+    {
+        display:block;
+        width: 100%;
+    }
+}
+
+/* detaljno.php */
+.detaljno.nav-pills li a{
+    transition: all 0.4s ease 0s;
+}
+.detaljno.nav-pills li a.active{
+    background-color: #3b3a36 !important;
+    color: #ffd500 !important;
+}
+.detaljno.nav-pills li a{
+    padding:0.7rem;
+    margin:0 5px;
+    font-size: 1rem;
+    background-color: #3b3a36 !important;
+    color: white !important;
+    border-radius:0.5rem;
+}
+.detaljno.nav-pills li:hover a{
+    color: #ffd500 !important;
+}
+.vozilaSlike{
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: contain !important;
+}
+
+/* pregled */
+@media only screen and (max-width: 575px) {
+    .mojeRezervacijeKartica div div *{
+        font-size: 1rem;
+    }
+    .red1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .red2{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    #opis hr{
+        display:none;
+    }
+    .red1 > *{
+        margin-bottom:10px;
+    }
+}
+
+/* registracija.php */
+#registracijaForm{
+    width:40%;
+    margin:0 auto; 
+    background:#f3f3f3ec;
+    border-radius: 0.3rem;
+}
+@media only screen and (max-width: 991px) {
+    #registracijaForm{
+        width:60%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #registracijaForm{
+        width:70%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #registracijaForm{
+        width:80%;
+    }
+}
+
+/* prijava.php */
+.prijavaBG{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:93.2vh;
+    background: url("../img/prijavaBG.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+#prijavaForm{
+    width:40%;
+    margin:0 auto; 
+    background:#f3f3f3ec;
+    border-radius: 0.3rem;
+}
+@media only screen and (max-width: 991px) {
+    #prijavaForm{
+        width:60%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #prijavaForm{
+        width:70%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #prijavaForm{
+        width:80%;
+    }
+}
+
+/* mojeRezervacije.php */
+.mojeRezervacijeKartica{
+    border:1px solid lightgray;
+    border-radius: 0.5rem;
+    background:white;
+}
+@media only screen and (max-width: 575.98px) { 
+    .mojeRezervacijeKartica .predajBtn{
+        font-size: 0.8rem;
+    }
+    .mojeRezervacijeKartica div div *{
+        font-size: 1rem;
+    }
+    .mojeRezervacijeKartica .red1, .mojeRezervacijeKartica .red2{
+        margin-top:0px !important;
+    }
+    .mojeRezervacijeKartica .red1{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .mojeRezervacijeKartica .red2{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 991.98px) { 
+    .mojeRezervacijeKartica div div hr{
+        display:none;
+    }
+    .mojeRezervacijeKartica .predajBtn{
+        margin-top:0.5rem;
+    }
+}
+
+/* mojProfil.php */
+@media only screen and (max-width: 767px) { 
+    #osobniPodaci .red1{
+        display:block !important;
+    }
+    #osobniPodaci .red1 *{
+        display:flex;
+    }
+    #osobniPodaci .red1 h6:first-child:after {
+        content: ": ";
+        white-space: pre;
+    }
+}
+
+/* utilities */
+.predajBtn{
+    color:white; 
+    background:#3b3a36;
+    border:none;
+    border-radius: 0.3rem;
+    display:block;
+    width:50%;
+    padding:0.5rem;
+    margin:0 auto;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all 0.4s ease 0s
+}
+.predajBtn:hover{
+    color:#ffd500; 
+}
+
+.crveno{
+    color:red;
+}

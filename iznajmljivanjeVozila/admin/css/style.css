@@ -1,0 +1,41 @@
+#urediVoziloForm div.form-group #opis,
+#dodajVoziloForm div.form-group #opis{
+    resize: none;
+}
+
+.vozilaSlike{
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: contain  !important;
+}
+
+/* upravljanje-korisnicima i upravljanje markama - tipke */
+#tdZaTipke{
+    vertical-align:middle;
+}
+@media only screen and (max-width: 1200px) {
+    #tdZaTipke{
+        min-width: 150px;
+    }
+}
+#tdZaTipke .tipke{
+    display:flex !important;
+}
+#tdZaTipke .tipke > div{
+    margin:0 0.5rem 0 0;
+}
+
+/* dodaj-marku.php, dodaj-vozilo.php, uredi-vozilo.php i uredi-vozilo.php */
+#dodajMarkuForm .tipke, #dodajVoziloForm .tipke, #urediVoziloForm .tipke, #urediMarkuForm .tipke{
+    display:flex !important;
+}
+#dodajMarkuForm .tipke > div, #dodajVoziloForm .tipke > div, #urediVoziloForm .tipke > div, #urediMarkuForm .tipke > div{
+    margin:1rem 1rem 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    #osobniPodaci hr{
+        display: none;
+    }
+
+}
